@@ -1,0 +1,104 @@
+/* colours */
+:root{
+  --primary: #1f567c;
+  --secondary: #febc2f;
+  --title: #e5e4f8;
+  --tert: #1f567c;
+}
+
+/* layout styles */
+
+.mast{
+  background: var(--tert);
+}
+
+
+/* recipe styles */
+.recipes{
+  margin-top: 10px;
+}
+
+.card-panel{
+  border-radius: 2px;
+  padding: 4px;
+  
+}
+
+
+
+
+#more {display: none;}
+.recipe img{
+  grid-area: image;
+  max-width: 250px;
+  max-height: 250px;
+}
+.recipe-details{
+  grid-area: details;
+  margin-top: 6px;
+}
+.recipe-delete{
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.recipe-delete i{
+  font-size: 18px;
+}
+.recipe-title{
+  font-weight: bold;
+}
+.recipe-ingredients{
+  font-size: 0.8em;
+}
+
+/* form-styles */
+.add-btn{
+  background: var(--title) !important;
+}
+input{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button{
+  background: var(--title);
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+form .input-field{
+  margin-top: 30px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+   clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 900px) {
+  .column {
+    width: 25%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 450px) {
+  .column {
+    width: 100%;
+  }
+}
